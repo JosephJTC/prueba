@@ -3,5 +3,39 @@ console.log("JavaScript funcionando");
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 
+const player = {
+    x: 100,
+    y: 100,
+    width: 50,
+    height: 50,
+    speed: 5
+};
+
 ctx.fillStyle = "red";
-ctx.fillRect(100, 100, 100, 100);
+
+function drawPlayer() {
+    ctx.fillStyle = "blue";
+
+    ctx.fillRect(
+        player.x,
+        player.y,
+        player.width,
+        player.height
+    );
+}
+const keys = {};
+
+document.addEventListener("keydown", (event) => {
+    keys[event.key] = true;
+});
+
+document.addEventListener("keyup", (event) => {
+    keys[event.key] = false;
+});
+
+function update() {
+  drawPlayer()
+  update()
+}
+
+update()
