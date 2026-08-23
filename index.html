@@ -1,25 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Mi primera página</title>
+    <title>Mi juego</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>¡Hola! 👋</h1>
+    <canvas id="game" width="800" height="600"></canvas>
 
-    <p>Esta es mi primera página publicada con GitHub Pages.</p>
-
-    <button onclick="saludar()">
-        Haz clic
-    </button>
-
-    <script>
-        function saludar() {
-            alert("¡Hola desde GitHub Pages!");
-        }
-    </script>
-
+    <script src="game.js"></script>
 </body>
 </html>
