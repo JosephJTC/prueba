@@ -1,1 +1,10 @@
+body {
+    margin: 0;
+    background: #222;
+}
 
+canvas {
+    display: block;
+    margin: auto;
+    background: white;
+}
