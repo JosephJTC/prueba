@@ -23,6 +23,25 @@ function drawPlayer() {
         player.height
     );
 }
+
+function mov() {
+
+    if (keys["w"]) {
+        player.y -= player.speed;
+    }
+
+    if (keys["s"]) {
+        player.y += player.speed;
+    }
+
+    if (keys["a"]) {
+        player.x -= player.speed;
+    }
+
+    if (keys["d"]) {
+        player.x += player.speed;
+    }
+}
 const keys = {};
 
 document.addEventListener("keydown", (event) => {
@@ -35,6 +54,7 @@ document.addEventListener("keyup", (event) => {
 
 function update() {
   drawPlayer()
+    mov()
   update()
 }
 
